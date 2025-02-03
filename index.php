@@ -1,0 +1,315 @@
+<?php
+<header>
+<h1><?php bloginfo('name'); ?></h1>
+<p><?php bloginfo('description'); ?></p>
+</header>
+
+<?php get_header(); ?>
+<!-- Aquí va tu contenido principal -->
+<?php get_footer(); ?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contablemente Asesores</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Contablemente" class="logo">
+        <nav class="nav-menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+        </nav>
+            <div class="header-buttons">
+            <div> 
+                <a href="https://wa.me/3217523626" class="whatsapp-button"><img src="lwhatsapp.png" alt="WhatsApp" class="whatsapp-icon"> 3217523626</a>
+            </div>
+            <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=TU_TOKEN" class="cta-button" target="_blank">
+                Agendar asesoría
+            </a>
+        
+    </header>
+
+    <section id="nosotros" class="hero-section">
+        <img src="fotoppal.png" alt="Equipo de Contablemente Asesores" class="hero-image">
+        <div class="hero-content">
+            <h3>Tus aliados contables</h3>
+            <h1>Líderes en gerencia contable y tributaria</h1>
+            <h3>Emprendedores, Pymes, Medianas y Grandes Empresas</h3>
+            <button class="cta-button" style="margin: 20px":>Hablar con un asesor</button>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <span>CONTABLEMENTE ASESORES, 15 años impactando empresas. Somos una firma de gerencia contable y
+            tributaria en búsqueda de satisfacer las necesidades de nuestros clientes con valores agregados en nómina,
+            servicios jurídicos laborales, apoyo administrativo y consultoría en salud y seguridad en el trabajo.</span>
+    </section>
+
+    <section class="why-choose-us">
+        <div><h1>¿Por qué elegirnos?</h1></div>
+        <div>    
+            <span>Recibe asesoría especializada y confiable, accedes a los
+                servicios de una amplia gama de profesionales de distintas
+                ramas y obtienes acompañamiento continuo.
+            </span>
+        </div>
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Reducción de costos</h3>
+                <p>Tenemos a tu disposición todo el equipo humano y tecnológico que requiere un área contable.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Foco</h3>
+                <p>Podrás ser más eficiente y competitivo en tu actividad principal. Nosotros nos encargamos del resto.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-box"></i>
+                <h3>Ocupas menos espacio</h3>
+                <p>Destina tus espacios para funciones propias de tu actividad principal. Tu equipo estará en nuestras oficinas.</p>
+            </div>
+        </div>
+    </section>
+
+    <Section class="plans-tittle">
+        <h2>Nuestros Planes</h2>
+        <div>
+            <p>Elige el plan que más se ajuste a tus necesidades. Si requieres un servicio más personalizado,
+            comunícate con nuestros asesores para diseñar una solución a tu medida.</p>
+        </div>
+    </Section>
+
+    <section class="plans">
+        <div>
+            <div class="plan-cards">
+            <div class="plan-card">
+                <h3>Emprendedor</h3>
+                <h4>Pyme</h4>
+                <p><strong>Soporte contable en línea, Gestión Contable, Gestión de nómina (1 a 3 empleados), Gestión tributaria.</strong></p>
+                <p>*Gestión Administrativa (opcional) consulte valor con nuestros asesores 
+                   *Soporte Jurídico laboral y comercial virtual (Opcional) consulte valor con nuestros asesores</p>
+                <a href="#" class="cta-button">Adquirir plan</a>
+            </div>
+    
+            <div class="plan-card">
+                <h3>Básico</h3>
+                <h4>Empresas Pequeñas</h4>
+                <p><strong>Soporte contable en línea, Gestión Contable, Gestión de nómina (hasta 10 empleados), Gestión tributaria.</strong></p>
+                <p>*Gestión Administrativa (opcional) consulte valor con nuestros asesores 
+                   *Soporte Jurídico laboral y comercial virtual (Opcional) consulte valor con nuestros asesores</p>
+                <a href="#" class="cta-button">Adquirir plan</a>
+            </div>
+    
+            <div class="plan-card">
+                <h3>Intermedio</h3>
+                <h4>Empresa Mediana</h4>
+                <p><strong>Soporte contable en línea, Gestión Contable, Gestión de nómina (1 a 3 empleados), Gestión tributaria.</strong></p>
+                <p>*Gestión Administrativa (opcional) consulte valor con nuestros asesores 
+                   *Soporte Jurídico laboral y comercial virtual (Opcional) consulte valor con nuestros asesores</p>
+                <a href="#" class="cta-button">Adquirir plan</a>
+            </div>
+    
+            <div class="plan-card">
+                <h3>Full</h3>
+                <h4>Empresa Grande</h4>
+                <p><strong>Soporte contable en línea, Gestión Contable, Gestión de nómina (1 a 3 empleados), Gestión tributaria.</strong></p>
+                <p>*Gestión Administrativa (opcional) consulte valor con nuestros asesores 
+                   *Soporte Jurídico laboral y comercial virtual (Opcional) consulte valor con nuestros asesores</p>
+                <a href="#" class="cta-button">Adquirir plan</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="srv-tittle">
+        <h1>¡Lo hacemos por ti!</h1>
+    </section>
+  
+    <section class="services">
+        <h2>Servicios</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide feature-card">
+                    <h3>Consultoría Tributaria</h3>
+                    <p>Planificamos y proyectamos sus impuestos de persona natural o jurídica mediante la correcta aplicación de las normas tributarias vigentes.</p>
+                    <a href="#" class="srv-button">Cotizar servicio</a>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide feature-card">
+                    <h3>Contadores Freelancer</h3>
+                    <h5>En nuestras instalaciones</h5>
+                    <p>Preparamos y presentamos tus impuestos, emitimos y certificamos estados financieros.</p>
+                    <a href="#" class="srv-button">Cotizar servicio</a>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide feature-card">
+                    <h3>Ocupas menos espacio</h3>
+                    <p>Destina tus espacios para funciones propias de tu actividad principal. Tu equipo estará en nuestras oficinas.</p>
+                    <a href="#" class="srv-button">Cotizar servicio</a>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide feature-card">
+                    <h3>Outsourcing Contable</h3>
+                    <h5>En nuestras instalaciones</h5>
+                    <p>Preparamos tu información para
+                        el cumplimiento de obligaciones
+                        tributarias, emitimos y certificamos
+                        estados financieros, te apoyamos
+                        y asesoramos en todo lo relacionado
+                        a nómina y facturación electrónica.</p>
+                    <a href="#" class="srv-button">Cotizar servicio</a>
+                </div>
+                <!-- Slide 6 -->
+                <div class="swiper-slide feature-card">
+                    <h3>Contadores Frelancer</h3>
+                    <h5>En nuestras instalaciones</h5>
+                    <p>Planificamos y proyectamos sus
+                        impuestos de persona natural o
+                        jurídica mediante la correcta
+                        aplicación de las normas tributarias
+                        vigentes.</p>
+                    <a href="#" class="srv-button">Cotizar servicio</a>
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide feature-card">
+                    <h3>Nómina Integral</h3>
+                    <p>Liquidación de nóminas y prestaciones
+                        sociales parciales y definitivas.
+                        Generación de aportes mensuales,
+                        asesoría en temas laborales, UGPP,
+                        reportes de nómina electrónica a la
+                        DIAN.</p>
+                    <a href="#" class="srv-button">Cotizar servicio</a>
+                </div>
+                <!-- Slide 8 -->
+                <div class="swiper-slide feature-card">
+                    <h3>Consultoría Jurídico Laboral y Comercial</h3>
+                    <p>Servicios legales relacionados con
+                        Derecho Laboral y seguridad social,
+                        Derecho Civil y Comercial, relaciones
+                        de consumo y Habeas data. </p>
+                    <a href="#" class="srv-button">Cotizar servicio</a>
+                </div>
+                <!-- Slide 9 -->
+                <div class="swiper-slide feature-card">
+                    <h3>Auditoría</h3>
+                    <p>Revisamos desde las buenas
+                        prácticas contables sus procesos
+                        de cartera, nómina, facturación,
+                        contabilidad e impuestos y emitimos
+                        recomendaciones que te puedan
+                        ayudar a optimizarlos.</p>
+                    <a href="#" class="srv-button">Cotizar servicio</a>
+                </div>
+            </div><br>
+    
+            <!-- Botones de navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+    
+            <!-- Paginación -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="clients"><br><br><br><br><br><br>
+        <h1>Clientes que han confiado en nosotros</h1><br><br>
+    </section>
+    
+
+    <Section class="tittle">
+        
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="slide"><img src="Nuestros-clientes/logo-almin-alianza-mercados-independientes.jpg" alt="Logo 1"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-d'essens.png" alt="Logo 2"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-dinamic-media.jpg" alt="Logo 3"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-flota-bernal-sa.png" alt="Logo 4"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-geneplanet.png" alt="Logo 5"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-optica-la-salle.png" alt="Logo 6"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-protokimica.jpg" alt="Logo 1"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-selco-materiales-compuestos.png" alt="Logo 7"></div>
+                    <div class="slide"><img src="Nuestros-clientes\logo-tasa-transportes-aranjuez.jpg" alt="Logo 8"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-almin-alianza-mercados-independientes.jpg" alt="Logo 9"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-d'essens.png" alt="Logo 2"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-dinamic-media.jpg" alt="Logo 3"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-flota-bernal-sa.png" alt="Logo 4"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-geneplanet.png" alt="Logo 5"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-optica-la-salle.png" alt="Logo 6"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-protokimica.jpg" alt="Logo 1"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-selco-materiales-compuestos.png" alt="Logo 7"></div>
+                    <div class="slide"><img src="Nuestros-clientes\logo-tasa-transportes-aranjuez.jpg" alt="Logo 8"></div>
+                    <div class="slide"><img src="Nuestros-clientes/logo-almin-alianza-mercados-independientes.jpg" alt="Logo 9"></div>
+                </div>
+            </div>       
+    </Section><br><br>
+
+    <section class="testimonial-tittle">
+        <h3>Testimonios</h3>
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Valoramos enormemente las relaciones sólidas y en Contablemente Asesores Contables
+        nos encargamos de construir historias para toda la vida.</p>
+    </section>
+
+<section class="testimonials">
+    
+<section class="testimonial-cards">
+    <div class="testimonial-card">
+        <h3>Sandra Zapata Rico</h3>
+        <p>Excelente servicio y atención del
+            personal operativo y administrativo.
+            Sin duda Recomendado.</p>
+    </div>
+    <div class="testimonial-card">
+        <h3>Grupo Empresarial AF</h3>
+        <p>Feliz con la atencion y la dispocision
+            increible ,calidad humana, y el
+            seguimiento continuo, por eso me
+            tomo el tiempo de escribir y resaltar
+            lo bueno.</p>
+    </div>
+    <div class="testimonial-card">
+        <h3>Leannis Montoya</h3>
+        <p>Excelente asesoramiento por parte
+            del personal se nota el verdadero
+            profesionalismo y amor con que
+            ejercen su labor ya que es muy
+            preciso en lo que la persona busca
+            y necesita..</p>
+    </div>
+</section>
+
+
+<section class="newsletter">
+    <h2>Suscríbete y recibe 10% en tu primer mes de servicio</h2>
+    <form class="newsletter-form">
+        <input type="email" placeholder="Ingresa tu e-mail">
+        <div class="subs-button">
+            <button type="submit" class="cta-button">Suscribirse</button>
+        </div>
+    </form>
+</section>
+
+
+<footer class="footer">
+    <p>&copy; 2024 Contablemente Asesores. Todos los derechos reservados.</p>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<footer>
+    <p>&copy; <?php echo date('Y'); ?> - <?php bloginfo('name'); ?></p>
+</footer>

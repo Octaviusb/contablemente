@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contablemente Asesores</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Variables y reset */
+        :root {
+            --primary-color: #0D173B;
+            --secondary-color: #4A90E2;
+            --text-color: #333;
+            --white: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Uni Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        /* Estilos para el encabezado */
+        .header {
+            padding: 1rem 2rem;
+            background: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 17px;
+        }
+
+        .cta-button {
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Estilos para la sección del héroe */
+        .hero {
+            background-image: url('path-to-your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(13, 23, 59, 0.7);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: var(--white);
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            font-family: 'Eras Light ITC', Arial, sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 2rem;
+        }
+
+        /* Resto de las secciones */
+        /* Agrega aquí el código HTML y CSS para las demás secciones de la página web */
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="path-to-logo.png" alt="Contablemente" class="logo">
+        <nav class="nav-menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#" class="cta-button">Agendar asesoría</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle">Tus aliados contables</p>
+            <h1>Líderes en gerencia contable y tributaria</h1>
+            <p>Emprendedores, Pymes, Medianas y Grandes Empresas</p>
+            <a href="#" class="cta-button">Hablar con un asesor</a>
+        </div>
+    </section>
+
+    <!-- Continuación del código -->
+<section class="why-choose-us">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="features">
+        <div class="feature-card">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>Reducción de costos</h3>
+            <p>Tenemos a tu disposición todo el equipo humano y tecnológico que requiere un área contable.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-bullseye"></i>
+            <h3>Foco</h3>
+            <p>Podrás ser más eficiente y competitivo en tu actividad principal. Nosotros nos encargamos del resto.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-box"></i>
+            <h3>Ocupas menos espacio</h3>
+            <p>Destina tus espacios para funciones propias de tu actividad principal. Tu equipo estará en nuestras oficinas.</p>
+        </div>
+    </div>
+</section>
+
+<section class="plans">
+    <h2>Nuestros Planes</h2>
+    <div class="plan-cards">
+        <div class="plan-card">
+            <h3>Emprendedor</h3>
+            <p>Soporte contable en línea, Gestión Contable, Gestión de nómina (1 a 3 empleados), Gestión tributaria</p>
+            <a href="#" class="cta-button">Adquirir plan</a>
+        </div>
+        <!-- Agrega los demás planes aquí -->
+    </div>
+</section>
+
+<section class="services">
+    <h2>Servicios</h2>
+    <div class="service-grid">
+        <div class="service-card">
+            <!-- Información y detalles del servicio -->
+        </div>
+        <!-- Agrega más tarjetas de servicio aquí -->
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <!-- Información y detalles del testimonio -->
+        </div>
+        <!-- Agrega más tarjetas de testimonio aquí -->
+    </div>
+</section>
+
+<section class="newsletter">
+    <h2>Suscríbete y recibe 10% en tu primer mes de servicio</h2>
+    <form class="newsletter-form">
+        <input type="email" placeholder="Ingresa tu e-mail">
+        <button type="submit" class="cta-button">Suscribirse</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2024 Contablemente Asesores. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

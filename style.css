@@ -1,0 +1,538 @@
+/*
+Theme Name: Landing
+Theme URI: http://contablementeasesores.com
+Description: Este es un tema personalizado.
+Version: 1.0
+Author: Ener Octavio Buitrago C.
+Author URI: http://contablementeasesores.com   
+*/
+
+
+/* Variables y Reset */
+:root {
+    --primary-color: #0D173B;
+    --secondary-color: #4A90E2;
+    --text-color: #333;
+    --white: #fff;
+    --light-gray: #f9f9f9;
+    --dark-blue: #0D173B;
+    --hover-shadow: rgba(0, 0, 0, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Uni Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Header */
+.main-header {
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+.header {
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+}
+
+.main-nav .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: lighter;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: var(--secondary-color);
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.whatsapp-button {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0rem 1rem;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.schedule-button {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0rem 1rem;
+    background-color: #2659db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-button:hover {
+    background-color: #093ab4;
+}
+
+/* Actualizar el media query para incluir los botones */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .whatsapp-button, 
+    .schedule-button {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 500px;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.hero-content {
+    position: absolute; 
+    top: 70%; 
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    z-index: 3;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        top: 50%;
+        left: 50%;
+        text-align: center;
+    }
+}
+
+.cta-button {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #2659db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* About Section */
+.about-us {
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Plans Section */
+.plans-tittle {
+    margin-left: 30px;
+}
+
+.plans {
+    padding: 4rem 2rem;
+    background: var(--light-gray);
+    display: flex;
+    justify-content: center;
+}
+
+.plan-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.plan-card {
+    min-width: 200px;
+    max-width: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card h3 {
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.plan-card h4 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.plan-card p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.plan-card .cta-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #49dd50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.plan-card ul li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.plan-card ul li::before {
+    content: "✔";
+    color: green;
+    margin-right: 8px;
+}
+
+.plan-card .highlight {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666;
+}
+
+.plan-card button {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 10px;
+    background: green;
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.plan-card button:hover {
+    background: rgb(121, 238, 160);
+}
+
+/* Estilo especial para la tarjeta destacada */
+.plan-card.featured {
+    background: var(--dark-blue);
+    color: var(--white);
+    box-shadow: 0 4px 15px var(--hover-shadow);
+}
+
+.plan-card.featured ul li::before {
+    color: #0f0;
+}
+
+/* Efecto hover */
+.plan-card:hover {
+    background: #0D173B;
+    color: var(--white);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px var(--hover-shadow);
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .plan-card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-card {
+        flex: 1 1 100%;
+    }
+}
+
+.tittle {
+    text-align: center;
+}
+
+/* Services Section */
+.services {
+    width: 200px;
+    height: 200px;
+    max-height: 300px;
+    margin-left: 30px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-card:hover {
+    background: #f2f5f0;
+    color: #0D173B;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px var(--hover-shadow);
+}
+
+.srv-button{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 10px;
+    background: rgb(33, 230, 33);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.srv-tittle{
+    text-align: center;
+}
+
+/* Asegura que las tarjetas mantengan la misma altura */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.feature-card {
+    width: 250px;  
+    display: flex;
+    flex-direction: column;
+    padding: 15px; 
+    font-size: 14px;
+}
+
+.feature-card h3 { 
+    font-size: 16px; 
+}
+
+.feature-card p {
+    font-size: 13px; 
+}
+
+.clients {
+    margin-left: 30px;
+    text-align: center;
+}
+
+/* Contenedor principal del slider */
+.slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;  
+}
+
+/* Cada uno de los logotipos */
+.slide {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.slide img {
+    max-width: 150px;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin-left: 30px;
+}
+
+.testimonial-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    width: 300px;
+    height: 300px;
+    text-align: center !important;
+    padding: 2rem;
+}
+
+.testimonial-tittle {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.newsletter-form input {
+    width: 70%;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+/* Footer */
+.footer {
+    padding: 2rem;
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.subs-button {
+    margin: 20px;
+    margin-left: 50px;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features,
+    .plan-cards,
+    .service-grid,
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}
+
